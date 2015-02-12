@@ -73,7 +73,13 @@ $ git checkout gh-pages
       </footer>
     </div>
 
-    
+    <script>
+    navigator.serviceWorker.register('/worker.js').then(function(reg) {
+  		console.log('◕‿◕', reg);
+	}, function(err) {
+	  	console.log('ಠ_ಠ', err);
+	});
+    </script>
 
   </body>
 </html>
